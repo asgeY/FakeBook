@@ -25,6 +25,9 @@ struct Feed: Identifiable {
     var imageName: String
     var text: String
     var user: User
+    var likes: String
+    var comments: String
+    var share: String
 }
 
 struct HomePageModel {
@@ -45,11 +48,11 @@ struct HomePageModel {
     var feeds: [Feed] = {
          var user = User(imageName: "potrait", userName: "Lexi")
         
-        return [Feed(imageName: "feed6", text: "Life is beautiful", user: user),
-                Feed(imageName: "feed7", text: "You only live once", user: user),
-                Feed(imageName: "feed8", text: "Stop and embrace the moment", user: user),
-                Feed(imageName: "feed9", text: "I have to take this shot", user: user),
-                Feed(imageName: "feed10", text: "It has been fun travel!", user: user),
+        return [Feed(imageName: "feed6", text: "Life is beautiful", user: user, likes: "Like", comments: "Comment", share: "Share"),
+                Feed(imageName: "feed7", text: "You only live once", user: user, likes: "Like", comments: "Comment", share: "Share"),
+                Feed(imageName: "feed8", text: "Stop and embrace the moment", user: user, likes: "Like", comments: "Comment", share: "Share"),
+                Feed(imageName: "feed9", text: "I have to take this shot", user: user, likes: "Like", comments: "Comment", share: "Share"),
+                Feed(imageName: "feed10", text: "It has been fun travel!", user: user, likes: "like", comments: "Comment", share: "Share"),
                 
         ]
     }()

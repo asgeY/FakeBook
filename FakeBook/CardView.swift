@@ -27,7 +27,7 @@ struct CardView : View {
             }
             .frame(width: 130)
         }
-        .frame(width: 130, height: 200)
+        .frame(width: 110, height: 200)
             .clipped()
             .cornerRadius(20)
             .shadow(radius: 5)
