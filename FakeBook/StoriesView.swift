@@ -18,7 +18,7 @@ struct StoriesView : View {
                     
                 }
             }
-            .padding([.leading, .trailing],5)
+            
         }
     }
 }
